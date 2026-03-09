@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎾 Niki's Tennis Calendar</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f1f0f;
+      color: #e8f5e9;
+      min-height: 100vh;
+      padding: 24px 16px 48px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      color: #81c784;
+      margin-top: 4px;
+      font-size: 0.95rem;
+    }
+
+    .stats {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+
+    .stat-card {
+      background: #1b2e1b;
+      border: 1px solid #2e4a2e;
+      border-radius: 12px;
+      padding: 16px 24px;
+      text-align: center;
+      min-width: 100px;
+    }
+
+    .stat-card .value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #a5d6a7;
+    }
+
+    .stat-card .label {
+      font-size: 0.78rem;
+      color: #66bb6a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 4px;
+    }
+
+    .section {
+      max-width: 600px;
+      margin: 0 auto 28px;
+    }
+
+    .section h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #66bb6a;
+      margin-bottom: 12px;
+      padding-left: 4px;
+    }
+
+    .session-card {
+      background: #1b2e1b;
+      border: 1px solid #2e4a2e;
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .session-card.upcoming {
+      border-color: #4caf50;
+      background: #1a3320;
+    }
+
+    .session-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+
+    .session-info .date {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .session-info .time {
+      color: #81c784;
+      font-size: 0.88rem;
+      margin-top: 2px;
+    }
+
+    .session-info .type {
+      font-size: 0.78rem;
+      color: #a5d6a7;
+      margin-top: 4px;
+      background: #2e4a2e;
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 20px;
+    }
+
+    .badge-upcoming {
+      margin-left: auto;
+      background: #4caf50;
+      color: #0f1f0f;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+
+    .empty {
+      text-align: center;
+      color: #4a7a4a;
+      padding: 24px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      color: #2e4a2e;
+      font-size: 0.78rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎾 Niki's Tennis Calendar</h1>
+    <p>Maintained by Ace · Updated March 9, 2026</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat-card">
+      <div class="value">1</div>
+      <div class="label">Sessions Done</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">1</div>
+      <div class="label">Upcoming</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">2</div>
+      <div class="label">Total Logged</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📅 Upcoming</h2>
+
+    <div class="session-card upcoming">
+      <div class="session-icon">🎾</div>
+      <div class="session-info">
+        <div class="date">Wednesday, March 12</div>
+        <div class="time">1:00 PM</div>
+        <div class="type">Tennis Lesson</div>
+      </div>
+      <div class="badge-upcoming">Next</div>
+    </div>
+
+  </div>
+
+  <div class="section">
+    <h2>✅ Past Sessions</h2>
+
+    <div class="session-card">
+      <div class="session-icon">✅</div>
+      <div class="session-info">
+        <div class="date">Saturday, March 7</div>
+        <div class="time">7:00 PM</div>
+        <div class="type">Tennis Lesson</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>Ace keeps this updated · 🎾</footer>
+
+</body>
+</html>
